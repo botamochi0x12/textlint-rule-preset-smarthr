@@ -22,7 +22,7 @@
   "scripts": {
     "example": "cd example && pnpm it",
     "test:textlint-scripts": "textlint-scripts test",
-    "test:dict": "textlint --config test/.textlintrc README.md",
+    "test:dict": "textlint --config test/.textlintrc README.md && textlint --config test/.textlintrc-header README.md",
     "test": "pnpm run test:dict && pnpm run test:textlint-scripts",
     "build": "textlint-scripts build",
     "prepublishOnly": "pnpm run --if-present build",

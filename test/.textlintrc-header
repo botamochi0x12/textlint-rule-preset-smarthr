@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "prh": {
+      "rulePaths": [
+        "../dict/prh-idiomatic-usage-header.yml"
+      ]
+    }
+  }
+}
