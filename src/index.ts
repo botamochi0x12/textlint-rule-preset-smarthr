@@ -3,6 +3,7 @@ import { moduleInterop } from '@textlint/module-interop'
 module.exports = {
   rules: {
     'prh-rules': moduleInterop(require('./prh-rules')),
+    'prh-header-rules': moduleInterop(require('./prh-header-rules')),
     'ja-no-mixed-period': moduleInterop(require('textlint-rule-ja-no-mixed-period')),
     'no-hankaku-kana': moduleInterop(require('textlint-rule-no-hankaku-kana')),
     '@textlint-rule/no-unmatched-pair': moduleInterop(require('@textlint-rule/textlint-rule-no-unmatched-pair')),
@@ -26,6 +27,10 @@ module.exports = {
 
   rulesConfig: {
     'prh-rules': true,
+    'prh-header-rules': {
+      checkHeader: true,
+      checkParagraph: false,
+    },
     'ja-no-mixed-period': true,
     'no-hankaku-kana': true,
     '@textlint-rule/no-unmatched-pair': true,

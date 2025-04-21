@@ -1,0 +1,14 @@
+import fs from 'fs'
+import prh from 'textlint-rule-prh'
+
+const reporter = (context: any) => {
+  const idiomaticUsage = fs.readFileSync(__dirname + '/../dict/prh-idiomatic-usage-header.yml', 'utf-8')
+  return prh.fixer(context, {
+    ruleContents: [idiomaticUsage],
+  })
+}
+
+module.exports = {
+  linter: reporter,
+  fixer: reporter,
+}
