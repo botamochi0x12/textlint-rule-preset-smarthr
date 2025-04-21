@@ -41,6 +41,7 @@
     "prettier": "^3.5.3",
     "standard-version": "^9.3.2",
     "textlint": "^14.6.0",
+    "textlint-rule-prh": "^6.1.0",
     "textlint-scripts": "^14.6.0",
     "textlint-tester": "^14.6.0",
     "ts-node": "^10.9.2",
@@ -71,7 +72,6 @@
     "textlint-rule-no-mix-dearu-desumasu": "^6.0.4",
     "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
     "textlint-rule-no-nfd": "^2.0.2",
-    "textlint-rule-prh": "^6.0.0",
     "textlint-rule-sentence-length": "^5.2.0"
   },
   "name": "textlint-rule-preset-smarthr",
